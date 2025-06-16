@@ -1,7 +1,5 @@
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
-
 #define LED_PIN 2 // GPIO pin for the LED
 
 // Credetials for WiFi connection
