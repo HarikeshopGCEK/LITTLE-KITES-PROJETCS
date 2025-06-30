@@ -12,6 +12,13 @@
 
 #define ENA 10
 #define ENB 11
+void forward();
+void backward();
+void left();
+void right();
+void stop();
+// Initialize the MPU6050 sensor
+// Ensure you have the MPU6050_light library installed
 MPU6050 mpu(Wire);
 void setup()
 {
