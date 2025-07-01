@@ -17,8 +17,10 @@
 #define ECHO 6
 #define TRIG 7
 
+#define THRESHOLD 20 // Distance threshold in cm
+
 float distance = 0.0;
-void measureDistance() {
+float measureDistance() {
     digitalWrite(TRIG, LOW);
     delayMicroseconds(2);
     digitalWrite(TRIG, HIGH);
@@ -27,6 +29,37 @@ void measureDistance() {
 
     long duration = pulseIn(ECHO, HIGH);
     distance = duration * 0.034 / 2; // Convert to cm
+    return distance;
+}
+void forward() {
+    digitalWrite(LM1, HIGH);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, HIGH);
+    digitalWrite(RM2, LOW);
+}
+void backward() {
+    digitalWrite(LM1, LOW);
+    digitalWrite(LM2, HIGH);
+    digitalWrite(RM1, LOW);
+    digitalWrite(RM2, HIGH);
+}
+void left() {
+    digitalWrite(LM1, LOW);
+    digitalWrite(LM2, HIGH);
+    digitalWrite(RM1, HIGH);
+    digitalWrite(RM2, LOW);
+}
+void right() {
+    digitalWrite(LM1, HIGH);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, LOW);
+    digitalWrite(RM2, HIGH);
+}
+void stop() {
+    digitalWrite(LM1, LOW);
+    digitalWrite(LM2, LOW);
+    digitalWrite(RM1, LOW);
+    digitalWrite(RM2, LOW);
 }
 void setup(){
     pinMode(LM1, OUTPUT);
@@ -43,38 +76,24 @@ void setup(){
 void loop(){
     distance = measureDistance();
 
-    if (distance < 20) {
+    if (1 < distance && distance < THRESHOLD) {
         if (digitalRead(LIR) == LOW && digitalRead(RIR) == LOW) {
             // Move forward
-            digitalWrite(LM1, HIGH);
-            digitalWrite(LM2, LOW);
-            digitalWrite(RM1, HIGH);
-            digitalWrite(RM2, LOW);
+            forward();
         } else if (digitalRead(LIR) == HIGH && digitalRead(RIR) == LOW) {
             // Turn right
-            digitalWrite(LM1, HIGH);
-            digitalWrite(LM2, LOW);
-            digitalWrite(RM1, LOW);
-            digitalWrite(RM2, HIGH);
+            right();
         } else if (digitalRead(LIR) == LOW && digitalRead(RIR) == HIGH) {
             // Turn left
-            digitalWrite(LM1, LOW);
-            digitalWrite(LM2, HIGH);
-            digitalWrite(RM1, HIGH);
-            digitalWrite(RM2, LOW);
+            left();
+ 
         } else {
             // Stop
-            digitalWrite(LM1, LOW);
-            digitalWrite(LM2, LOW);
-            digitalWrite(RM1, LOW);
-            digitalWrite(RM2, LOW);
+            stop();
         }
     } else {
         // Stop if no obstacle is detected
-        digitalWrite(LM1, LOW);
-        digitalWrite(LM2, LOW);
-        digitalWrite(RM1, LOW);
-        digitalWrite(RM2, LOW);
+        stop();
     }
     delay(100); // Small delay to avoid rapid changes
 
