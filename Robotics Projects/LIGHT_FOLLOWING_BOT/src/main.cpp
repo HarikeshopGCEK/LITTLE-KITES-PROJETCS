@@ -10,38 +10,44 @@
 #define LLDR 8
 #define RLDR 9
 #define CLDR 12
-void forward() {
+void forward()
+{
     digitalWrite(LM1, HIGH);
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, HIGH);
     digitalWrite(RM2, LOW);
 }
-void backward() {
+void backward()
+{
     digitalWrite(LM1, LOW);
     digitalWrite(LM2, HIGH);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, HIGH);
 }
-void left() {
+void left()
+{
     digitalWrite(LM1, LOW);
     digitalWrite(LM2, HIGH);
-    digitalWrite(RM1, HIGH);    
+    digitalWrite(RM1, HIGH);
     digitalWrite(RM2, LOW);
 }
-void right() {
+void right()
+{
     digitalWrite(LM1, HIGH);
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, HIGH);
 }
-void stop() {
+void stop()
+{
     digitalWrite(LM1, LOW);
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, LOW);
 }
 
-void setup() {
+void setup()
+{
     Serial.begin(9600);
     pinMode(LM1, OUTPUT);
     pinMode(LM2, OUTPUT);
@@ -54,22 +60,32 @@ void setup() {
     pinMode(CLDR, INPUT);
 }
 
-void loop() {
-    int leftLDR = digitalRead(LLDR);
-    int rightLDR = digitalRead(RLDR);
-    int centerLDR = digitalRead(CLDR);
+void loop()
+{
+    int leftLDR = analogRead(LLDR);
+    int rightLDR = analogRead(RLDR);
+    int centerLDR = analogRead(CLDR);
 
-    if (leftLDR == LOW && rightLDR == LOW && centerLDR == LOW) {
+    if (0 < centerLDR && centerLDR < 500)
+    { // Adjust threshold as needed
         forward();
-    } else if (leftLDR == HIGH && rightLDR == LOW && centerLDR == LOW) {
-        left();
-    } else if (leftLDR == LOW && rightLDR == HIGH && centerLDR == LOW) {
-        right();
-    } else if (leftLDR == HIGH && rightLDR == HIGH && centerLDR == LOW) {
-        backward();
-    } else {
-        stop();
     }
-    
+    else if (leftLDR < 500 && rightLDR < 500)
+    {
+        stop(); // Stop if both LDRs are dark
+    }
+    else if (leftLDR < 500)
+    {
+        right(); // Turn right if left LDR is dark
+    }
+    else if (rightLDR < 500)
+    {
+        left(); // Turn left if right LDR is dark
+    }
+    else
+    {
+        stop(); // Stop if no LDRs are dark
+    }
+
     delay(100); // Small delay to avoid rapid changes
 }
