@@ -16,6 +16,8 @@ void forward()
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, HIGH);
     digitalWrite(RM2, LOW);
+    analogWrite(ENA, LSPEED);
+    analogWrite(ENB, RSPEED);
 }
 void backward()
 {
@@ -23,6 +25,8 @@ void backward()
     digitalWrite(LM2, HIGH);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, HIGH);
+    analogWrite(ENA, LSPEED);
+    analogWrite(ENB, RSPEED);
 }
 void left()
 {
@@ -30,6 +34,8 @@ void left()
     digitalWrite(LM2, HIGH);
     digitalWrite(RM1, HIGH);
     digitalWrite(RM2, LOW);
+    analogWrite(ENA, LSPEED);
+    analogWrite(ENB, RSPEED);
 }
 void right()
 {
@@ -37,6 +43,8 @@ void right()
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, HIGH);
+    analogWrite(ENA, LSPEED);
+    analogWrite(ENB, RSPEED);
 }
 void stop()
 {
@@ -44,6 +52,8 @@ void stop()
     digitalWrite(LM2, LOW);
     digitalWrite(RM1, LOW);
     digitalWrite(RM2, LOW);
+    analogWrite(ENA, 0);
+    analogWrite(ENB, 0);
 }
 
 void setup()
