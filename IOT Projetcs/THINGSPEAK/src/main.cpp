@@ -10,7 +10,7 @@ const char *ssid = "your_SSID"; // Replace with your WiFi SSID
 const char *password = "your_PASSWORD"; // Replace with your WiFi password
 
 const char *yourWriteAPIKey = "your_WRITE_API_KEY"; // Replace with your ThingSpeak Write API Key
-const char *yourChannelID = "your_CHANNEL_ID"; // Replace with your ThingSpeak Channel ID
+unsigned long int yourChannelID = CHannelID; // Replace with your ThingSpeak Channel ID
 
 WiFiClient client;
 DHT dht(DHTPIN, DHTTYPE);
