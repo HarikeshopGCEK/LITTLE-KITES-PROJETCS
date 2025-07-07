@@ -1,22 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THING SPEAK DASHBOARD</title>
-</head>
-<body>
-    <h1>THING SPEAK DASHBOARD</h1>
-    <p>Welcome to the ThingSpeak Dashboard!</p>
-    <p>This dashboard displays real-time data from your IoT devices.</p>
-    <p>Make sure your devices are connected and sending data to ThingSpeak.</p>
-    <p>Check the ThingSpeak channel for live updates.</p>
-    <footer>
-        <p>&copy; 2023 IoT Projects</p>
-    </footer>
-    <script>
-        // You can add JavaScript here for dynamic content or interactions
-        console.log("Welcome to the ThingSpeak Dashboard!");
-    </script>
-</body>
+<html>
+  <head>
+    <title>ThingSpeak Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        background: #fbeee6;
+        font-family: "Segoe UI", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 500px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+        padding: 32px 24px;
+      }
+      h1 {
+        text-align: center;
+        color: #2e7d32;
+        margin-bottom: 24px;
+        font-size: 2.5rem;
+      }
+      .data-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .data-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #e8f5e9;
+        border-radius: 8px;
+        padding: 14px 18px;
+        font-size: 1.2rem;
+        box-shadow: 0 1px 4px rgba(46, 125, 50, 0.07);
+      }
+      .label {
+        color: #388e3c;
+        font-weight: 500;
+      }
+      .value {
+        color: #1b5e20;
+        font-weight: bold;
+      }
+      .timestamp {
+        text-align: right;
+        color: #888;
+        margin-top: 18px;
+        font-size: 1rem;
+      }
+      footer {
+        text-align: center;
+        color: #2e7d32;
+        margin: 32px 0 12px 0;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ThingSpeak Dashboard</h1>
+      <div id="dataDisplay">Loading data...</div>
+    </div>
+    <footer>&copy; 2025 ThingSpeak Dashboard</footer>
+    <script src="index.js"></script>
+  </body>
 </html>
