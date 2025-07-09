@@ -1,5 +1,4 @@
 from flask import Flask, send_from_directory
-
 app = Flask(__name__)
 led_State = 0  # <-- Add this line
 @app.route('/')
