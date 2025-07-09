@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Intro to Micro Controller and Git"
             }
+          },
+          {
+            "id": "96bc20c30344eca8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/NOdeMCU.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "NOdeMCU"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro to Micro Controller and Git.md",
+                "file": "Excalidraw/NOdeMCU.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Intro to Micro Controller and Git"
+              "title": "Backlinks for NOdeMCU"
             }
           },
           {
@@ -113,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro to Micro Controller and Git.md",
+                "file": "Excalidraw/NOdeMCU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Intro to Micro Controller and Git"
+              "title": "Outgoing links from NOdeMCU"
             }
           },
           {
@@ -142,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro to Micro Controller and Git.md",
+                "file": "Excalidraw/NOdeMCU.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Intro to Micro Controller and Git"
+              "title": "Outline of NOdeMCU"
             }
           }
         ]
@@ -165,11 +178,18 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ccbffc43835d89d9",
+  "active": "96bc20c30344eca8",
   "lastOpenFiles": [
-    "Intro to Micro Controller and Git.md"
+    "Intro to Micro Controller and Git.md",
+    "Excalidraw/NOdeMCU.md",
+    "Pasted Image 20250710001152_756.png",
+    "pngegg.png",
+    "Pasted image 20250709235144.png",
+    "Excalidraw",
+    "Pasted image 20250709235203.png"
   ]
 }
