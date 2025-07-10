@@ -205,4 +205,25 @@ Commands:
 		- index.html
 		- index.js
 		- index.css
-1. Now hoping you guys know 
+1. Now hoping you guys know how to use the terminal
+	- Choose the website Folder as directory and type
+	- `firebase init`
+	- Output Should Be Like
+	 ```sh
+(node:636) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  M:\firebase
+
+? Are you ready to proceed? (Y/n)
+```
+
+- Type in Y and we can proceed from there on
