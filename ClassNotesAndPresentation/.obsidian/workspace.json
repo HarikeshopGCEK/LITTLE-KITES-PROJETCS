@@ -33,8 +33,7 @@
               "title": "NOdeMCU"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,10 +181,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "96bc20c30344eca8",
+  "active": "ccbffc43835d89d9",
   "lastOpenFiles": [
-    "Intro to Micro Controller and Git.md",
     "Excalidraw/NOdeMCU.md",
+    "Intro to Micro Controller and Git.md",
     "Pasted Image 20250710001152_756.png",
     "pngegg.png",
     "Pasted image 20250709235144.png",

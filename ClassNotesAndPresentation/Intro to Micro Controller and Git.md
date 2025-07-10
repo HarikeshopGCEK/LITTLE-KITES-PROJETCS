@@ -40,3 +40,7 @@
 | **Best Use Cases**          | Control systems, automation, beginner projects | IoT systems, sensor networks, remote monitoring | Choose Arduino for interfacing-heavy applications; NodeMCU for connected smart systems. |
 
 ----
+## How do we program it
+1. You guys may be familiarised with Arduino IDE
+2. But we gotta be able to program NodeMCU With it
+3. Lets setup the Arduino IDE
