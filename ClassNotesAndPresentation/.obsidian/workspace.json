@@ -174,13 +174,23 @@
               "icon": "lucide-list",
               "title": "Outline of NOdeMCU"
             }
+          },
+          {
+            "id": "4c27aefaa26245dd",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,16 +200,18 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "ccbffc43835d89d9",
   "lastOpenFiles": [
     "Intro to Micro Controller and Git.md",
-    "Excalidraw/IoT section.md",
+    "().md",
     "Excalidraw/NOdeMCU.md",
-    "Untitled.canvas",
     "IoT Projects 1.md",
+    "Excalidraw/IoT section.md",
+    "Untitled.canvas",
     "Pasted image 20250710164812.png",
     "Pasted Image 20250710001152_756.png",
     "pngegg.png",
