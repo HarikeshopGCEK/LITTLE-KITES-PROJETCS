@@ -44,3 +44,74 @@
 1. You guys may be familiarised with Arduino IDE
 2. But we gotta be able to program NodeMCU With it
 3. Lets setup the Arduino IDE
+### Setting Up the IDE
+1. Arduino IDE May be already installed now we got to tweak it a bit
+2. Open File -> Prerences -> Scroll Down to Addiotional Board Manager Url
+3. Paste the following url in the box   `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
+4. Now when uploading the code make sure you select the following board
+5. ![[Pasted image 20250710164812.png]]
+----
+## Why Choose C/C++ for NodeMCU (ECE POV)
+
+### 🔧 1. **Precise Hardware Control**
+
+- C lets you control **GPIO**, **timers**, **interrupts**, and **PWM** with **pin-level precision**.
+    
+- MicroPython is **not real-time friendly** — delays and jitter can mess up sensor timing or communication.
+    
+
+🗣️ "You don’t want your ultrasonic sensor missing a pulse because Python was busy sipping chai ☕."
+
+---
+
+### 🧠 2. **More RAM & Flash for You**
+
+- MicroPython interpreter **eats up flash and RAM**
+    
+- In ESP8266 (with 4MB flash and ~50KB RAM), MicroPython uses ~1MB+ itself.
+    
+- C gives you **more room for your code and data**.
+    
+
+---
+
+### 📡 3. **Tighter Wi-Fi & Networking Control**
+
+- ESP8266’s Wi-Fi and TCP/IP stack is **better supported in C (Arduino libraries)**.
+    
+- You can write **asynchronous web servers**, do OTA updates, and use **MQTT** efficiently in C.
+    
+
+---
+
+### 🧪 4. **ECE Experiments Need Speed**
+
+- For things like:
+    
+    - Measuring pulses from a tachometer
+        
+    - Generating waveforms
+        
+    - Controlling motors with PWM
+        
+    - Reading analog sensors with high precision  
+        C is simply more **reliable** and **real-time**.
+----
+# Where do I put my files huh ? And what if I need help
+
+----
+
+# What is Git & GitHub
+
+---
+- **** Git is basically a time machine for your projects
+	- It knows what you have done so far
+	- Knows what changes you made to them
+	- You can go back in time and access anything from past
+- ********** Basic Functions Of Git 
+	- Commit - Saving project in each point of time
+	- Branch new path to try changes without effecting the main project
+	- Merge : combine your experiment with og project
+- **** GitHub is an online show case where the projects are saved and showcased
+
+Create a GitHub account from [GitHub Website](https://github.com)
