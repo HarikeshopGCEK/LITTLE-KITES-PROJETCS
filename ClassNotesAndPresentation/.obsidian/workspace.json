@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "7ce089bacd97f6a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "IoT Project 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "IoT Project 3"
+            }
+          },
+          {
             "id": "dc0ce2be8939da4d",
             "type": "leaf",
             "state": {
@@ -59,7 +73,8 @@
               "title": "Plugin no longer active"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,14 +233,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ccbffc43835d89d9",
+  "active": "7ce089bacd97f6a8",
   "lastOpenFiles": [
+    "IoT Projects 2.md",
+    "IoT Project 3.md",
     "Installation.md",
     "Intro to Micro Controller and Git.md",
     "IoT Projects 1.md",
     "Excalidraw/NOdeMCU.md",
     "Excalidraw/IoT section.md",
-    "IoT Projects 2.md",
     "ThingSpeak Works.md",
     "().md",
     "Untitled.canvas",
