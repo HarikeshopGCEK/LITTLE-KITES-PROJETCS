@@ -11,3 +11,5 @@
 # Here comes our Python Again
 ---
 ### Why do we go back to Python
+- The Implementation of A server is much easier using python as a base because we are utilizing something called flask
+- Lets learn A bit about flask
