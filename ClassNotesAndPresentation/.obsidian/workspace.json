@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Installation.md",
+                "file": "IoT Projects 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Installation"
+              "title": "IoT Projects 2"
             }
           },
           {
@@ -43,8 +43,8 @@
               "state": {
                 "file": "Excalidraw/IoT section.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "IoT section"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -55,8 +55,8 @@
               "state": {
                 "file": "Excalidraw/NOdeMCU.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "NOdeMCU"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -220,13 +220,13 @@
   },
   "active": "ccbffc43835d89d9",
   "lastOpenFiles": [
-    "IoT Projects 1.md",
     "Installation.md",
+    "Intro to Micro Controller and Git.md",
+    "IoT Projects 1.md",
     "Excalidraw/NOdeMCU.md",
     "Excalidraw/IoT section.md",
     "IoT Projects 2.md",
     "ThingSpeak Works.md",
-    "Intro to Micro Controller and Git.md",
     "().md",
     "Untitled.canvas",
     "Pasted image 20250710164812.png",
