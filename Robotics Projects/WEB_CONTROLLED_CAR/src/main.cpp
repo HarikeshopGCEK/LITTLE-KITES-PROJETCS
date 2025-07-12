@@ -62,8 +62,8 @@ void stop()
 
 void handleRoot()
 {
-    String html = "<html><body>";
-    html += "<h1>Web Controlled Car</h1>";
+    String html = "<html><body style='text-align:center;'>";
+    html += "<h1 style='color:white;'>Web Controlled Car</h1>";
     html += "<button onclick=\"fetch('/forward')\">Forward</button>";
     html += "<button onclick=\"fetch('/backward')\">Backward</button>";
     html += "<button onclick=\"fetch('/left')\">Left</button>";
